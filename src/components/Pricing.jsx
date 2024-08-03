@@ -8,7 +8,7 @@ const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
       <div className="container relative z-2">
-        <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
+        {/* <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
             src={smallSphere}
             className="relative z-1"
@@ -25,10 +25,10 @@ const Pricing = () => {
               alt="Stars"
             />
           </div>
-        </div>
+        </div> */}
 
         <Heading
-          tag="Get started with Brainwave"
+          // tag="Get started with Brainwave"
           title="Pay once, use forever"
         />
 
@@ -38,14 +38,14 @@ const Pricing = () => {
           <RightLine />
         </div>
 
-        <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
           <a
             className="text-xs font-code font-bold tracking-wider uppercase border-b"
             href="/pricing"
           >
             See the full details
           </a>
-        </div>
+        </div> */}
       </div>
     </Section>
   );
