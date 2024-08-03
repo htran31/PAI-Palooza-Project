@@ -4,13 +4,42 @@ import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleEmailSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:3000/save-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        setMessage(result.message);
+      } else {
+        setMessage('Failed to save email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setMessage('An error occurred while saving the email');
+    }
+  };
 
   return (
     <Section
@@ -39,9 +68,20 @@ const Hero = () => {
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
-          <Button href="/pricing" white>
-            Get started
-          </Button>
+          <form onSubmit={handleEmailSubmit}>
+            <input
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="Enter your email"
+              className="mb-4 p-2 border border-gray-300 rounded"
+              required
+            />
+            <Button type="submit" white>
+              Submit
+            </Button>
+          </form>
+          {message && <p>{message}</p>}
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
