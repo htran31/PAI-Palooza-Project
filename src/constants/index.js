@@ -39,23 +39,23 @@ import {
 export const navigation = [
   {
     id: "0",
+    title: "Home",
+    url: "#home",
+  },
+  {
+    id: "1",
+    title: "Demo",
+    url: "#demo",
+  },
+  {
+    id: "2",
     title: "Features",
     url: "#features",
   },
   {
-    id: "1",
+    id: "3",
     title: "Pricing",
     url: "#pricing",
-  },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
   },
   {
     id: "4",
@@ -212,9 +212,9 @@ export const pricing = [
     description: "AI chatbot, personalized recommendations",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Access up to 5 custom boards",
+      "Utilizes a straightforward board template",
+      "Customizable layout for user preference",
     ],
   },
   {
@@ -223,9 +223,9 @@ export const pricing = [
     description: "Advanced AI chatbot, priority support, analytics dashboard",
     price: "9.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Unlimited boards with advanced customization options",
+      "Enhanced job board template with web scraping capabilities",
+      "No ads for a distraction-free experience",
     ],
   },
   {
@@ -234,9 +234,9 @@ export const pricing = [
     description: "Custom AI chatbot, advanced analytics, dedicated account",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Direct contact with us for support and inquiries",
+      "Custom business deals tailored to your needs",
+      "Advertising opportunities for business owners and partners",
     ],
   },
 ];
