@@ -23,7 +23,7 @@ const Hero = () => {
   const handleEmailSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/save-email', {
+      const response = await fetch('http://localhost:3001/save-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
