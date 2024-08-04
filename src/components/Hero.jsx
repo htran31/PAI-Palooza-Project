@@ -90,7 +90,8 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Revolutionize multitasking by unifying all your tabs into one customizable dashboard. Experience seamless productivity — sign up now!
           </p>
-          <form id="demo" className="relative z-2 min-h-[12rem] p-[2.4rem]" onSubmit={handleEmailSubmit}>
+          <Button onClick={()=>{window.open("https://mailchi.mp/f4516e1ea508/mypage","_self")}} style={{borderStyle: "solid"}}>Enter the Waitlist</Button>
+          {/* <form id="demo" className="relative z-2 min-h-[12rem] p-[2.4rem]" onSubmit={handleEmailSubmit}>
             <input
               type="email"
               value={email}
@@ -103,7 +104,7 @@ const Hero = () => {
               Subscribe
             </Button>
           </form>
-          {message && <p>{message}</p>}
+          {message && <p>{message}</p>} */}
         </div>
         
         {/* Embed YouTube Video */}
