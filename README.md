@@ -435,13 +435,13 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Home",
+    url: "#home",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Demo",
+    url: "#demo",
   },
   {
     id: "4",
