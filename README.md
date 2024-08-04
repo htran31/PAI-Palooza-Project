@@ -2,6 +2,10 @@
 
 Our product is designed to give aspiring software engineers a competitive edge in their job search.
 
+This page is the Landing Page to collect early subscribers for MyPage.
+
+Website: https://pai-palooza-project.vercel.app/
+
 Key Features:
 
     •    Job Board Template:
