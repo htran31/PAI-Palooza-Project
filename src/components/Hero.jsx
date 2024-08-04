@@ -89,22 +89,22 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Revolutionize multitasking by unifying all your tabs into one customizable dashboard. Experience seamless productivity — sign up now!
           </p>
-          <form onSubmit={handleEmailSubmit}>
+          <form id="demo" className="relative z-2 min-h-[12rem] p-[2.4rem]" onSubmit={handleEmailSubmit}>
             <input
               type="email"
               value={email}
               onChange={handleEmailChange}
               placeholder="Enter your email"
-              className="mb-4 p-2 border border-gray-300 rounded"
+              className="mt-2 p-3 border pr-20 border-white-500 rounded "
               required
             />
-            <Button type="submit" white>
-              Submit
+            <Button className="ml-5" type="submit" white>
+              Subscribe
             </Button>
           </form>
           {message && <p>{message}</p>}
         </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+        <div className="relative max-w-[23rem] mx-auto mt-[10.25rem] md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
