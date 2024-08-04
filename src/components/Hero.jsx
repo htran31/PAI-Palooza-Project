@@ -9,6 +9,7 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import { smallSphere, stars } from "../assets";
+import EmailForm from './EmailForm';
 
 const Hero = () => {
   const parallaxRef = useRef(null);
