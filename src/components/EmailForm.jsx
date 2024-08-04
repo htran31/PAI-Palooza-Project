@@ -7,7 +7,7 @@ const EmailForm = () => {
   const handleEmailSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/save-email', {
+      const response = await fetch('https://mighty-island-16463-cdb9931bccaa.herokuapp.com/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
